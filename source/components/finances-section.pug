@@ -1,0 +1,56 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      img.finances-section__icon-left(src="images/icon-star.svg" loading="lazy" width="739" height="760" alt="icon")
+      img.finances-section__icon-right(src="images/icon-star.svg" loading="lazy" width="739" height="760" alt="icon")
+      h2.finances-section__title.font-w-black.font-s-44
+        | О бизнес-модели 
+        br.no-br
+        | франшизы
+      .swiper-bullet
+        .finances-section__cards.swiper-wrapper
+          .finances-section__card.swiper-slide
+            .finances-section__card-num.font-w-black.font-s-48 01
+            .font-w-black.font-s-32.text-up 26 дней
+            .font-s-24 Понадобится <br> на запуск
+          .finances-section__card.finances-section__card--blue.swiper-slide
+            .finances-section__card-num.font-w-black.font-s-48 02
+            .font-w-black.font-s-32.text-up 53,6%
+            .font-s-24 Рентабельность <br> по чистой прибыли
+          .finances-section__card.swiper-slide
+            .finances-section__card-num.font-w-black.font-s-48 03
+            .font-w-black.font-s-32.text-up 230 000 ₽
+            .font-s-24 Средний размер <br> ежемесячной выручки
+          .finances-section__card.finances-section__card--blue.swiper-slide
+            .finances-section__card-num.font-w-black.font-s-48 04
+            .font-w-black.font-s-32.text-up 11 месяцев
+            .font-s-24 Средний срок <br> окупаемости
+          .finances-section__card.swiper-slide
+            .finances-section__card-num.font-w-black.font-s-48 05
+            .font-w-black.font-s-32.text-up 933 000 ₽
+            .font-s-24 Средний размер <br> вложений
+          .finances-section__card.finances-section__card--blue.swiper-slide
+            .finances-section__card-num.font-w-black.font-s-48 06
+            .font-w-black.font-s-32.text-up 120 000 ₽
+            .font-s-24 Средний размер <br> ежемесячной прибыли
+        .bullet-pagination
+      .finances-section__bottom
+        img.finances-section__bottom-img(src="images/finances-section-bottom-img.png" loading="lazy" width="886" height="664" alt="image")
+        .finances-section__bottom-text
+          .font-w-black.font-s-26.color-blue.text-up
+            | Хотите получить 
+            br.no-br
+            | детальные расчеты 
+            br.no-br
+            | для вашего города и 
+            br.no-br
+            | под ваш бюджет?
+          .finances-section__bottom-sub-text.font-s-16.color-black
+            | Скачайте финансовую модель 
+            br
+            | франшизы «ХИТФОТО»
+        form.finances-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") Скачать

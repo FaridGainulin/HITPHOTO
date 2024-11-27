@@ -1,0 +1,38 @@
+section.details-section
+  .wrapper
+    .details-section__container
+      img.details-section__img-1(src="images/details-section-img-1.png" loading="lazy" width="1016" height="862" alt="image")
+      img.details-section__img-2(src="images/details-section-img-2.png" loading="lazy" width="670" height="698" alt="image")
+      img.details-section__icon-left(src="images/icon-star.svg" loading="lazy" width="739" height="760" alt="icon")
+      h2.details-section__title.font-w-black.font-s-44.text-up
+        | Узнайте больше о грамотном
+        br
+        | ведении этого бизнеса
+      .details-section__sub-title.font-w-semi-bold.font-s-24
+        | Оставьте заявку на подробную консультацию, 
+        br.no-br
+        | чтобы понять:
+      .details-section__box
+        .swiper-bullet
+          .details-section__cards.swiper-wrapper
+            .details-section__card.swiper-slide
+              img.details-section__card-icon(src="images/details-section-card-icon.svg" loading="lazy" width="30" height="31" alt="icon")
+              .font-s-16 Какое оборудование выбрать и как его правильно настроить
+            .details-section__card.swiper-slide
+              img.details-section__card-icon(src="images/details-section-card-icon.svg" loading="lazy" width="30" height="31" alt="icon")
+              .font-s-16 Как автоматизировать процессы обработки фотографий
+            .details-section__card.swiper-slide
+              img.details-section__card-icon(src="images/details-section-card-icon.svg" loading="lazy" width="30" height="31" alt="icon")
+              .font-s-16 Как выделить свой фотосалон на фоне конкурентов
+            .details-section__card.swiper-slide
+              img.details-section__card-icon(src="images/details-section-card-icon.svg" loading="lazy" width="30" height="31" alt="icon")
+              .font-s-16 Какие рекламные акции работают лучше всего
+            .details-section__card.swiper-slide
+              img.details-section__card-icon(src="images/details-section-card-icon.svg" loading="lazy" width="30" height="31" alt="icon")
+              .font-s-16 Как построить собственную сеть салонов
+          .bullet-pagination
+      form.details-section__form(data-feedback-form)
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+        button.btn(type="submit") Оставить заявку

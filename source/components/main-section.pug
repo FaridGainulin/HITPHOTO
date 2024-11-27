@@ -1,0 +1,18 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      h1.main-section__title.font-w-extra-bold.font-s-44.text-up
+        | Зарабатывайте от 
+        br
+        span.font-s-40 120 000 рублей ежемесячно 
+        br
+        | открыв фотосалон по 
+        br
+        | франшизе «ХИТФОТО»
+      form.main-section__form(data-feedback-form)
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        input.input.input--secondary(type="text" name="name" autocomplete="off" placeholder="Имя")
+        input.input.input--secondary(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+        button.btn(type="submit") Получить план открытия
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1114" height="1080" alt="image")

@@ -1,0 +1,165 @@
+.details-section
+  // background-image: url('../images/details-section-bg.jpg')
+  // background-repeat: no-repeat
+  // background-position: center
+  // background-size: cover
+  background-color #fff
+
+  &__container
+    position relative
+    z-index 1
+    padding 20px 0
+    +above($breakpoints.sm)
+      padding 40px 0
+    +above($breakpoints.md)
+      padding 60px 0
+    +above($breakpoints.xxl)
+      padding 78px 0 92px
+
+  &__img-1
+    position: absolute
+    z-index -1
+    width: 130px;
+    height: auto;
+    top: 79px;
+    right: -60px;
+    +above($breakpoints.sm)
+      width: 270px;
+      top: 177px;
+      right: 15px;
+    +above($breakpoints.md)
+      width 408px
+      top: 158px
+      right: 20px
+    +above($breakpoints.xxl)
+      width 508px
+      top: 218px
+      right: 20px
+
+  &__img-2
+    position: absolute
+    z-index -1
+    width: 80px;
+    height: auto;
+    top: 224px;
+    right: -70px;
+    +above($breakpoints.sm)
+      width: 135px;
+      top: 269px;
+      right: -135px;
+    +above($breakpoints.md)
+      width: 210px;
+      top: 246px;
+      right: -220px;
+    +above($breakpoints.xxl)
+      width 335px
+      top: 241px
+      right: -475px
+
+  &__icon-left
+    position: absolute
+    z-index -1
+    transform: rotate(-80deg);
+    width: 290px;
+    height: 329px;
+    top: 0px;
+    left: -273px;
+    +above($breakpoints.sm)
+      width: 370px;
+      height: 494px;
+      top: 0px;
+      left: -362px;
+    +above($breakpoints.md)
+      width: 520px;
+      height: 617px;
+      top: 0px;
+      left: -518px;
+    +above($breakpoints.xxl)
+      width: 739px;
+      height: 760px;
+      top: 32px;
+      left: -801px;
+
+  &__title,
+  &__sub-title
+    text-align: center
+    color: $color-blue
+
+  &__sub-title
+    padding 10px 0 15px
+    +above($breakpoints.sm)
+      padding 15px 0 30px
+    +above($breakpoints.md)
+      padding 17px 0 40px
+    +above($breakpoints.xxl)
+      padding 20px 0 60px
+
+  &__box
+    overflow hidden
+    +above($breakpoints.sm)
+      margin-left 100px
+    +above($breakpoints.md)
+      margin-left 150px
+    +above($breakpoints.xxl)
+      margin-left 200px
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: column
+      gap: 8px
+    +above($breakpoints.md)
+      gap: 10px
+    +above($breakpoints.xxl)
+      gap: 12px
+
+  &__card
+    width 280px !important
+    display: flex
+    align-items: center
+    gap: 10px
+    color: #000
+    +above($breakpoints.sm)
+      width max-content !important
+    +above($breakpoints.md)
+      gap: 12px
+    +above($breakpoints.xxl)
+      gap: 15px
+
+  &__card-img
+    width 20px
+    height: 21px
+    +above($breakpoints.sm)
+      width 22px
+      height: 23px
+    +above($breakpoints.md)
+      width 26px
+      height: 27px
+    +above($breakpoints.xxl)
+      width 30px
+      height: 31px
+
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 5px
+    +above($breakpoints.sm)
+      margin-top 50px
+      flex-direction: row
+      justify-content center
+      gap: 10px
+    +above($breakpoints.md)
+      margin-top 100px
+      gap: 15px
+    +above($breakpoints.xxl)
+      margin-top 163px
+      gap: 20px
+    & > *
+      width 280px !important
+      +above($breakpoints.sm)
+        width 235px !important
+      +above($breakpoints.md)
+        width 308px !important
+      +above($breakpoints.xxl)
+        width 380px !important
